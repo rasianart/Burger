@@ -1,0 +1,33 @@
+<h1>Burgers!</h1>
+
+<p>Add Burgers And Devour Them!</p>
+
+<ul id="added-burgers">Added Burgers
+  {{#each burgers}}
+  	<li>
+  		<p><span class="all-burgers">{{this.id}}.</span> {{this.burger_name}}</p>
+      <form action="/{{this.id}}" method="POST">
+        <input type="hidden" name="devour" value="{{this.id}}">
+        <button type="submit">Devour</button>
+      </form>
+  	</li>
+  {{/each}}
+</ul>
+
+<ul id="devoured-burgers">Devoured Burgers
+  {{#each devoured}}
+  	<li>
+  		<p><span class="all-burgers">{{this.id}}.</span> {{this.burger_name}}</p>
+  	</li>
+  {{/each}}
+</ul>
+
+<form id="create-form" action="/" method="POST">
+  <p>Enter Burger</p>
+  <div class="burger-form">
+    <!-- <label for="quo">Enter Burger:</label> -->
+    <textarea id="burger-input" name="burger" rows="8" cols="40"></textarea>
+  </div>
+
+  <button type="submit">Add Burger</button>
+</form>

@@ -1,0 +1,16 @@
+body{
+  text-align: center;
+}
+
+#added-burgers{
+  float: left;
+  margin-left: 38%;
+}
+
+#create-form {
+  clear: both;
+}
+
+#devoured-burgers{
+  float: left;
+}
