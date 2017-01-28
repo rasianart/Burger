@@ -4,5 +4,5 @@ module.exports = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
   password : 'Loonylupin87',
-  database : 'burger_db'
+  database : 'dream_db'
 });

@@ -6,7 +6,7 @@
 # https://github.com/sequelpro/sequelpro
 #
 # Host: 127.0.0.1 (MySQL 5.7.17)
-# Database: burger_db
+# Database: dream_db
 # Generation Time: 2017-01-24 19:32:45 +0000
 # ************************************************************
 
@@ -20,14 +20,14 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 
-# Dump of table burgers
+# Dump of table dreams
 # ------------------------------------------------------------
 
-DROP TABLE IF EXISTS `burgers`;
+DROP TABLE IF EXISTS `dreams`;
 
-CREATE TABLE `burgers` (
+CREATE TABLE `dreams` (
   `id` int(5) NOT NULL AUTO_INCREMENT,
-  `burger_name` varchar(200) DEFAULT NULL,
+  `dream_name` varchar(200) DEFAULT NULL,
   `devoured` tinyint(1) DEFAULT '0',
   `date` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)

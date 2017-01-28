@@ -16,7 +16,7 @@ app.use(express.static(__dirname + '/public'));
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-const routes = require('./controllers/burger_controller.js')(app);
+const routes = require('./controllers/dream_controller.js')(app);
 
 app.listen(PORT, function() {
   console.log("App listening on PORT " + PORT);
